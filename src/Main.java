@@ -9,7 +9,8 @@ public class Main {
         System.out.println(" i believe i can fly");
         System.out.println(" i believe i can fly");
         System.out.println(" lol. not funny");
-
+        jdbc con=new jdbc();
+        con.connect();
 
     }
 }
