@@ -1,7 +1,7 @@
 import java.sql.*;
 
 /**
- * credit ariel
+ * credit to ariel for class name
  */
 public class emou {
         public Connection connect() {
