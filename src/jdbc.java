@@ -18,7 +18,7 @@ public class jdbc {
     public void showData() {
         try {
             Connection connection = connect();
-            String sql = "SELECT id, name\n" +
+            String sql = "SELECT id=?d, name\n" +
                     "\tFROM public.name;";
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
@@ -53,7 +53,7 @@ public class jdbc {
     public void Update(int id, String name) {
         Connection connection = connect();
         String sql = String.format("UPDATE public.name\n" +
-                "\tSET name=%s\n" +
+                "\tSET name☺=%s\n" +
                 "\tWHERE ID=id;",name);
         try {
             Statement st = connection.createStatement();

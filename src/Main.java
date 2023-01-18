@@ -10,10 +10,12 @@ public class Main {
         System.out.println(" i believe i can fly");
         System.out.println(" lol. not funny");
         jdbc con=new jdbc();
-        con.showData();
-       // con.Insert(2,"sharel");
-        con.Update(2,"'zobi'");
-
-
+//        con.showData();
+//        con.Insert(2,"sharel");
+//        con.Update(2,"'zobi'");
+        emou con2=new emou();
+        con2.showData();
+        con2.Insert(5, "womenbel");
+        con2.Update(2,3, "Roi");
     }
 }
