@@ -55,7 +55,7 @@ public class emou {
 
         }
 
-        public void Update(int idold,int idnew, String name) {
+        public void Update(int idold, String name) {
             Connection connection = connect();
             String sql = ("UPDATE tname\n" +
                     "\tSET username=?\n" +
@@ -63,8 +63,8 @@ public class emou {
             try {
                 Statement st = connection.createStatement();
                 PreparedStatement statement = connection.prepareStatement(sql);
-                statement.setString(1,name);
-                statement.setInt(2,idold);
+                statement.setString(1, name);
+                statement.setInt(2, idold);
                 statement.executeUpdate();
                 st.close();
                 connection.close();
@@ -73,6 +73,5 @@ public class emou {
             }
 
         }
-    }
 
-
+}

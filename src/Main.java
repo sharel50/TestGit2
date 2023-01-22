@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * @author sharel koletkar ID 214132854
  *
@@ -13,9 +15,17 @@ public class Main {
 //        con.showData();
 //        con.Insert(2,"sharel");
 //        con.Update(2,"'zobi'");
-        emou con2=new emou();
-        con2.showData();
-        con2.Insert(5, "womenbel");
-        con2.Update(2,3, "Roi");
+//        emou con2=new emou();
+//        con2.showData();
+//        con2.Insert(5, "womenbel");
+//        con2.Update(2,3, "Roi");
+        ArrayList<name.Name> arr =new ArrayList<>();
+        name data=new name();
+        arr = data.showData();
+        System.out.println(arr);
+        // arr=data.Updeta(6,"ariel");
+        // System.out.println(arr);
+
     }
+
 }
