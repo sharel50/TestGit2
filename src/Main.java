@@ -19,8 +19,8 @@ public class Main {
 //        con2.showData();
 //        con2.Insert(5, "womenbel");
 //        con2.Update(2,3, "Roi");
-        ArrayList<name.Name> arr =new ArrayList<>();
-        name data=new name();
+        ArrayList<Name> arr =new ArrayList<Name>();
+        Name data=new Name();
         arr = data.showData();
         System.out.println(arr);
         // arr=data.Updeta(6,"ariel");
